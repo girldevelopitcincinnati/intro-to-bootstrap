@@ -61,7 +61,7 @@
 					**Some "rules":**
 
 					- We're here for you
-					- Every question is important
+					- Every question is `!important`
 					- Help each other
 					- Have fun!
 				</section>
@@ -69,7 +69,7 @@
 				<section data-background="dist/img/gdi-rules.gif"></section>
 
 				<section data-markdown>
-					## Ice Breaker
+					## Intros
 
 					- Who are you?
 					- What do you hope to get out of this workshop?
@@ -143,9 +143,117 @@
 				<section data-background="dist/img/start.gif"></section>
 
 				<!-- Project setup -->
+				<section data-markdown>
+					## Project setup
+
+					There are a number of ways you can add Bootstrap to your project and each way has its pros and cons.
+
+					The three most common ways are to:
+
+					- download the source files
+					- download the compiled files
+					- use a CDN
+				</section>
+
 				<!-- Source files -->
+				<section data-markdown>
+					## Project setup: Source files
+
+					This is the kitchen sink option - it comes with *everything*.
+
+					When you choose this option, you're getting uncompiled Sass files and ES6 Javascript - in addition to a bunch of other stuff. This includes the code and copy used to create Bootstrap's official website. 
+				</section>
+
+				<section data-markdown>
+					## Project setup: Source files
+
+					Getting raw files like this is great for developers with their own builds set up (NPM, Gulp, etc.). It gives you the flexibility to do what you want with the code (theming, optimizing builds, etc.), but that flexibility does come with a learning curve.
+				</section>
+
 				<!-- Compiled files -->
+				<section>
+					<h2>Project setup: Compiled files</h2>
+
+					<pre>
+						
+							dist
+							- css
+							&nbsp;&nbsp;- bootstrap-grid.css
+							&nbsp;&nbsp;- bootstrap-grid.css.map
+							&nbsp;&nbsp;- bootstrap-grid.min.css
+							&nbsp;&nbsp;- bootstrap-grid.min.css.map
+							&nbsp;&nbsp;- bootstrap-reboot.css
+							&nbsp;&nbsp;- bootstrap-reboot.css.map
+							&nbsp;&nbsp;- bootstrap-reboot.min.css
+							&nbsp;&nbsp;- bootstrap-reboot.min.css.map
+							&nbsp;&nbsp;- bootstrap.css
+							&nbsp;&nbsp;- bootstrap.css.map
+							&nbsp;&nbsp;- bootstrap.min.css
+							&nbsp;&nbsp;- bootstrap.min.css.map
+							- js
+							&nbsp;&nbsp;- bootstrap.bundle.js
+							&nbsp;&nbsp;- bootstrap.bundle.js.map
+							&nbsp;&nbsp;- bootstrap.bundle.min.js
+							&nbsp;&nbsp;- bootstrap.bundle.min.js.map
+							&nbsp;&nbsp;- bootstrap.js
+							&nbsp;&nbsp;- bootstrap.js.map
+							&nbsp;&nbsp;- bootstrap.min.js
+							&nbsp;&nbsp;- bootstrap.min.js.map
+					</pre>
+				</section>
+				
+				<section data-markdown>
+					## Project setup: Compiled files
+
+					Downloading the compiled files gives you CSS and JS files that you can link to your project with little setup required.
+
+					If you choose this option, just remember to link the *minified* CSS or JS file to your project.
+				</section>
+				
 				<!-- CDN -->
+				<section data-markdown>
+					## Project setup: CDN
+
+					*CDN* stands for *Content Delivery Network*. 
+					
+					Essentially, this means assets like styles or Javascript libraries can be served from a url online. Adding these assets is as simple as putting the link in the correct spot in your project.
+
+					Using a CDN makes setting up your project a breeze, allowing you to start a project quickly.
+				</section>
+				
+				<section data-markdown>
+					## Project setup: CDN
+
+					**Just remember**, every CDN added to your application can slow down the load time due to the multiple server requests required to run them. 
+					
+					For educational or small projects, this shouldn't be a problem. For anything larger, you should consider using a different build option.
+				</section>
+
+				<section data-markdown>
+					## Quick start template
+
+					Bootstrap provides documentation if you choose to use any of these options (and more), but their "quick start" guide uses the CDN-approach.
+
+					Navigate to Bootstrap's [Introduction](https://getbootstrap.com/docs/4.1/getting-started/introduction) section and we'll go over the starter template together.
+				</section>
+
+				<section data-markdown>
+					## 📢 Gotchas
+
+					When setting up a new Bootstrap project, remember:
+
+					- Make sure your files start with `&lt;!doctype html>` or your styles will look goofy AF
+					- Remember to include the responsive meta tag to your `&lt;head>`
+					- Add jQuery and Popper.js **before** Bootstrap's JS
+				</section>
+
+				<section data-markdown>
+					## 🛠 Let's develop it!
+
+					Using one of the previous ways discussed in this workshop, create a new HTML file and add Bootstrap to it.
+
+					*🚨 Hint: Remember to include jQuery and Popper.js to your project.*
+				</section>
 
 				<!-- Grid -->
 				<!-- BS3 v. BS4 -->
@@ -173,6 +281,28 @@
 				<!-- Display -->
 
 				<!-- Custom CSS -->
+				<section data-markdown>
+					## Adding your own styles
+
+					Undoubtedly there will be times where Bootstrap won't have the component you need or the look you want. In cases like this, you might want to add your own HTML/CSS to the project.
+				</section>
+
+				<section>
+					<h2>Adding your own styles</h2>
+
+					<p>To add your own styles, you'll want to create a new CSS* file and link it <em>beneath</em> the Bootstrap CSS files in the <code><head></code> of your project.</p>
+					<br>
+					<p><small>*Note: If using the Bootstrap source files, you'll need to write your styles using a Sass preprocessor.</small></p>
+				</section>
+
+				<section data-markdown>
+					## 🛠 Let's develop it!
+
+					Now that your site's coming together, you'll probably want to customize its look.
+					
+					1. Create a new CSS file named `custom.css` and add it to your HTML file. 
+					2. Add whatever styles you'd like - and feel free to create new elements in your HTML or add custom classes/ids if needed. This is your project, so have fun with it!
+				</section>
 
 				<!-- What's next? -->
 				<section data-markdown>
@@ -228,52 +358,6 @@
   alert("Hi, " + name)
 }
 </code></pre>
-				</section>
-
-
-        <!-- Elements entering one at a time-->
-        <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdicool.css'); return false;">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdilight.css'); return false;">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdisunny.css'); return false;">GDI Sunny</a> -
-            <a href="?theme=default#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/default.css'); return false;">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
 				</section>
 			</div>
   		<footer>
