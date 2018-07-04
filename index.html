@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to Bootstrap | GDI Cincinnati</title>
+
+		<meta name="description" content="Learn to make modern, responsive websites using Bootstrap 4!">
+		<meta name="author" content="Girl Develop It, Cincinnati">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="dist/css/reveal.css">
+		<link rel="stylesheet" href="dist/css/gdisunny.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<!-- light editor --><link rel="stylesheet" href="dist/css/light.css">
+		<!-- dark editor <link rel="stylesheet" href="dist/css/dark.css">-->
+		<!-- <link rel="stylesheet" href="dist/css/zenburn.css"> -->
+
+		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!-- If use the PDF print sheet so students can print slides-->
+
+		<link rel="stylesheet" href="dist/css/print/pdf.css" type="text/css" media="print">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<!--[if lt IE 9]>
+        <script src="dist/js/html5shiv.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <!-- Opening -->
+				<section>
+					<img src="dist/img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
+					<h1>Intro to Bootstrap</h1>
+					<p>Learn to make modern, responsive websites using Bootstrap 4!</p>
+				</section>
+
+				<!-- Welcome -->
+				<section data-markdown>
+					## Welcome
+
+					GDI is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.
+
+					**Some "rules":**
+
+					- We're here for you
+					- Every question is important
+					- Help each other
+					- Have fun!
+				</section>
+
+				<section data-background="dist/img/gdi-rules.gif"></section>
+
+				<section data-markdown>
+					## Ice Breaker
+
+					- Who are you?
+					- What do you hope to get out of this workshop?
+					- Do you have any experience with a frontend framework?
+				</section>
+
+				<!-- What is Bootstrap? -->
+				<section data-markdown>
+					## What is Bootstrap?
+
+					According to Bootstrap, it's the most popular *frontend component library* for developing *responsive*, *mobile-first* projects on the web.
+				</section>
+
+				<section data-markdown>
+					## What is Bootstrap?
+
+					**Frontend component library**
+
+					A collection of production-ready HTML/CSS/JavaScript components you can use with little configuration.
+				</section>
+
+				<section data-markdown>
+					## What is Bootstrap?
+
+					**Responsive**
+
+					A Web design approach allowing a single webpage to be viewed in response to the size of the screen/web browser it's being viewed with.
+				</section>
+
+				<section data-markdown>
+					## What is Bootstrap?
+
+					**Mobile-first**
+
+					Developing a webpage, beginning with your mobile design/layout, and gradually adjusting it so it looks good and behaves well on larger screen sizes.
+				</section>
+
+				<!-- What we're covering -->
+				<section data-markdown>
+					## What we'll be covering
+
+					- Setting up your project
+					- The grid
+					- Working with components
+					- Using utility classes
+					- Adding custom CSS 
+				</section>
+
+				<!-- What we're not covering -->
+				<section data-markdown>
+					## What we're **NOT** covering
+
+					- Flexbox
+					- Sass
+					- Bootstrap theming
+					- How to use every Bootstrap feature
+				</section>
+
+				<!-- What we're building -->
+				<section data-markdown>
+					## What we're building
+
+					We're going to build a knock-off Pizza Hut website.
+					
+					This site will combine a bunch of Bootstrap's most commonly used elements in a practical setting.
+					
+					[Demo]()
+				</section>				
+
+				<!-- Getting started -->
+				<section data-background="dist/img/start.gif"></section>
+
+				<!-- Project setup -->
+				<!-- Source files -->
+				<!-- Compiled files -->
+				<!-- CDN -->
+
+				<!-- Grid -->
+				<!-- BS3 v. BS4 -->
+				<!-- Structure -->
+				<!-- Column breakpoints -->
+				<!-- Auto-layout columns -->
+				<!-- Alignment utility classes -->
+				<!-- Reordering columns -->
+				<!-- Nesting columns -->
+
+				<!-- Components -->
+				<!-- Card -->
+				<!-- Jumbotron -->
+				<!-- Navbar -->
+
+				<!-- Custom Components -->
+				<!-- Header + nav combo -->
+
+				<!-- JS Component -->
+				<!-- Image carousel -->
+
+				<!-- Utility classes -->
+				<!-- Margin/padding -->
+				<!-- Typesetting -->
+				<!-- Display -->
+
+				<!-- Custom CSS -->
+
+				<!-- What's next? -->
+				<section data-markdown>
+					## What's next?
+
+					Now that you've built your first Bootstrap project, I encourage you to continue playing around with the framework. 
+					
+					Coding sandboxes like [Codepen](http://codepen.io/), [repl.it](http://repl.it/), etc. are great places to experiment.
+
+					If you're feeling really ambitious, check out [Sass](https://sass-lang.com/) and [flexbox](https://flexbox.io/), or try [building your own Bootstrap theme](https://themes.getbootstrap.com/)!
+				</section>
+
+				<!-- Examples of code slides-->
+				<section>
+					  <h2>But wait! We teach code</h2>
+					  <p>For HTML -- Surround your code pre, then code class "xml".</p>
+<pre><code class="xml">&lt;ul class="demo"&gt;
+  &lt;li&gt;No order here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+				</section>
+
+				<section>
+					  <h2>But wait! We teach code</h2>
+					  <p>We can also make code editable</p>
+<pre><code contenteditable class="xml">&lt;ul class="demo"&gt;
+  &lt;li&gt;No order here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+  &lt;li&gt;Or here&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+				</section>
+
+
+				<section>
+					  <h2>But wait! We teach code</h2>
+					  <p>CSS</p>
+<pre><code contenteditable class ="css">body{
+  background-color: #ffffff;
+}
+</code></pre>
+				</section>
+
+				<section>
+					  <h2>But wait! We teach code</h2>
+					  <p>Javascript</p>
+<pre><code contenteditable class ="javascript">function helloWorld(){
+  var name = 'GDI';
+  alert("Hi, " + name)
+}
+</code></pre>
+				</section>
+
+
+        <!-- Elements entering one at a time-->
+        <section>
+					<section>
+						<h2>Fragmented Views</h2>
+						<p>Hit the next arrow...</p>
+						<p class="fragment">... to step through ...</p>
+						<ol>
+							<li class="fragment"><code>any type</code></li>
+							<li class="fragment"><em>of view</em></li>
+							<li class="fragment"><strong>fragments</strong></li>
+						</ol>
+
+						<aside class="notes">
+							This slide has fragments which are also stepped through in the notes window.
+						</aside>
+					</section>
+					<section>
+						<h2>Fragment Styles</h2>
+						<p>There's a few styles of fragments, like:</p>
+						<p class="fragment grow">grow</p>
+						<p class="fragment shrink">shrink</p>
+						<p class="fragment roll-in">roll-in</p>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
+				</section>
+
+				<section id="themes">
+					<h2>Themes</h2>
+					<p>
+						Reveal.js comes with a few themes built in: <br>
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdicool.css'); return false;">GDI Cool</a> -
+            <a href="?theme=gdilight#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdilight.css'); return false;">GDI Light</a> -
+            <a href="?theme=gdisunny#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdisunny.css'); return false;">GDI Sunny</a> -
+            <a href="?theme=default#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/default.css'); return false;">Default</a>
+					</p>
+					<p>
+						<small>
+							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
+						</small>
+					</p>
+				</section>
+			</div>
+  		<footer>
+        <div class="copyright">
+          Intro to Bootstrap -- GDI Cincinnati
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+		</div>
+
+
+		<script src="dist/js/head.min.js"></script>
+		<script src="dist/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'dist/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
